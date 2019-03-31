@@ -10,7 +10,6 @@ from setuptools import setup
 # What packages are required for this module to be executed?
 REQUIRED = [
     'Django>=1.11',
-    'pynliner',
     'future>=0.16.0',
 ]
 
@@ -66,6 +65,7 @@ setup(
         'Topic :: Text Processing :: Markup :: HTML',
     ],
     install_requires=REQUIRED,
+    dependency_links=['https://github.com/tualatrix/pynliner/tarball/master#egg=pynliner-0.8.1'],
     tests_require=TESTS,
     extras_require=EXTRAS,
 )
